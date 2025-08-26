@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velora Energy — Reliable, high-performance solar power for homes and businesses." />
+  <title>Velora Energy | Solar Power</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- EmailJS CDN for contact form (works on GitHub Pages) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>window.addEventListener('DOMContentLoaded', () => emailjs.init({publicKey: 'agvYhTDqGqzLOWOQF'}));</script>
+</head>
+<body>
+  <!-- Decorative animated background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="site-header">
+    <a href="#top" class="brand">
+      <img src="./assets/logo-velora.jpg" alt="Velora Energy logo" class="brand-logo" />
+      <span class="brand-name">Velora Energy</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#bundle">Bundle</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact" class="cta">Get a Quote</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero" id="hero">
+      <div class="hero-content">
+        <div class="sun-badge" aria-hidden="true"></div>
+        <h1 class="shine">Power your world with <span>Velora Solar</span></h1>
+        <p>Slash energy costs and protect the planet with reliable, high‑performance solar solutions.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get a Quote</a>
+          <a href="#bundle" class="btn btn-ghost">View Bundle</a>
+        </div>
+        <div class="trust">
+          <span class="dot"></span> Homes & Businesses • Nationwide
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Solar panels, battery and inverter illustration">
+        <img src="./assets/promo-bundle.jpg" alt="Velora Solar bundle promo" loading="lazy"/>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about reveal" id="about">
+      <div class="container">
+        <h2>Welcome to Velora Energy</h2>
+        <p>
+          We help homeowners and businesses switch to solar, cutting monthly bills while reducing environmental impact.
+          Our systems are built for reliability, performance, and peace of mind.
+        </p>
+        <ul class="ticks">
+          <li>Money‑saving solar tips</li>
+          <li>Real customer success stories</li>
+          <li>Exclusive offers to make switching easier</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BUNDLE -->
+    <section class="section bundle reveal" id="bundle">
+      <div class="container">
+        <div class="bundle-head">
+          <h2>Solar Bundle Kit</h2>
+          <div class="price-pill">R 35 000</div>
+        </div>
+        <p class="muted">Upgrade to cutting‑edge solar solutions with Velora Energy — boost your property’s worth and live greener every day.</p>
+        <div class="bundle-grid">
+          <div class="bundle-card">
+            <div class="item-title">x6 Canadian 545W Solar Panels</div>
+            <p>High‑efficiency panels for dependable energy generation.</p>
+          </div>
+          <div class="bundle-card">
+            <div class="item-title">x1 Luxpower 5 kWh Off‑grid Inverter</div>
+            <p>Smart power management with strong performance and protection.</p>
+          </div>
+          <div class="bundle-card">
+            <div class="item-title">x1 SVolt 5.09 kWh Lithium Battery</div>
+            <p>Long‑life, safe energy storage you can trust.</p>
+          </div>
+        </div>
+        <div class="bundle-art">
+          <img src="./assets/promo-bundle.jpg" alt="Bundle items" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section why reveal" id="why">
+      <div class="container">
+        <h2>Why choose Velora?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="icon">✓</div>
+            <h3>Reliable Performance</h3>
+            <p>Premium components and expert installation for consistent output.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">✓</div>
+            <h3>Transparent Pricing</h3>
+            <p>Clear, upfront quotes — no surprises.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">✓</div>
+            <h3>After‑sales Support</h3>
+            <p>Friendly, fast assistance when you need it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact reveal" id="contact">
+      <div class="container">
+        <h2>Get a Free Quote</h2>
+        <p class="muted">Tell us a bit about your property and we’ll get back to you shortly.</p>
+        <form id="contact-form" class="card" autocomplete="on">
+          <div class="grid">
+            <label>Full Name
+              <input name="user_name" type="text" placeholder="Jane Doe" required />
+            </label>
+            <label>Email
+              <input name="user_email" type="email" placeholder="jane@email.com" required />
+            </label>
+            <label>Phone
+              <input name="user_phone" type="tel" placeholder="+27 64 482 8585" />
+            </label>
+            <label>City
+              <input name="user_city" type="text" placeholder="Cape Town" />
+            </label>
+          </div>
+          <label>Message
+            <textarea name="message" rows="5" placeholder="I’m interested in the 5kWh bundle…"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <span id="form-status" role="status" aria-live="polite"></span>
+          </div>
+          <p class="small">Or reach us directly: <a href="tel:+27644828585">064 482 8585</a> • <a href="mailto:velora.energy@gmail.com">velora.energy@gmail.com</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Velora Energy. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#bundle">Bundle</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
